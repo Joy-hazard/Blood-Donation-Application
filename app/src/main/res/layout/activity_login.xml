@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/Background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UsernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/UsernameTxt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/UsernameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="115dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordTxt"
+        app:layout_constraintStart_toEndOf="@+id/UsernameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordTxt"
+        app:layout_constraintEnd_toStartOf="@+id/LoginBtn"
+        app:layout_constraintStart_toStartOf="@+id/Background" />
+
+    <EditText
+        android:id="@+id/PasswordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="215dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/NewDonorAccountBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameTxt" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="255dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="@+id/Background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameTxt" />
+
+    <TextView
+        android:id="@+id/NewDonorAccountBtn"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="51dp"
+        android:text="@string/new_donor"
+        app:layout_constraintBottom_toTopOf="@+id/NewHospitalAccountBtn"
+        app:layout_constraintEnd_toEndOf="@+id/NewHospitalAccountBtn"
+        app:layout_constraintStart_toEndOf="@+id/LoginBtn"
+        app:layout_constraintStart_toStartOf="@+id/NewHospitalAccountBtn"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTxt" />
+
+    <TextView
+        android:id="@+id/NewHospitalAccountBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/new_hospital"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewDonorAccountBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

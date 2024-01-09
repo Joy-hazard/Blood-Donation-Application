@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blooddonationapp">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodDonationApp">
+        <activity
+            android:name=".RegisterHospitalActivity"
+            android:label="Register Hospital Account" />
+        <activity
+            android:name=".RegisterDonorHealthActivity"
+            android:label="Register Health Information" />
+        <activity
+            android:name=".AllDonorsActivity"
+            android:label="All Donors" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".HospitalHomeActivity"
+            android:label="Find Donors" />
+        <activity
+            android:name=".ResultDonorsActivity"
+            android:label="Search Results" />
+        <activity
+            android:name=".InformationActivity"
+            android:label="More Info" />
+        <activity
+            android:name=".RegisterDonorInfoActivity"
+            android:label="Register Personal Information" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
